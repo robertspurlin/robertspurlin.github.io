@@ -26,7 +26,7 @@ Also, these opinions included in this article are none other than my own. Again,
 
 ---
 
-About the concept of 'high availibility' WordPress sites - for the purposes of this post, 'high availibility' means a website that can handle hundreds of thousands of requests at any given time without any downtime or hiccups, and that the website will adjust it's resources available to ensure uptime. 
+About the concept of 'high availability' WordPress sites - for the purposes of this post, 'high availability' means a website that can handle hundreds of thousands of requests at any given time without any downtime or hiccups, and that the website will adjust it's resources available to ensure uptime. 
 
 To understand the concept, let's consider a situation where one website is being served by one server. No matter how large the server is and how many resources it has, the number of resources that the server will always be fixed (exceptions being if you upgrade the server). Theoretically, the server will only be able to serve a certain amount of requests at any given time before there are no more resources to allocate and the website 'crashes'. If there was a way to adjust the amount of resources a server has based on some metric, i.e. average CPU usage and/or incoming traffic, then we can ensure 100% uptime no matter the amount of requests coming in. 
 
