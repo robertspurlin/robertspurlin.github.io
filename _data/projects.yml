@@ -11,11 +11,11 @@
     the needs of the patrons. Built on a Library-specific CMS (SpringShare LibGuides).
   url: "https://library.mtsu.edu/"
   image: "library.png"
-  - name: "QuaverMusic and QuaverSEL Previews"
+- name: "QuaverMusic and QuaverSEL Previews"
   date: "2020"
   description: |
     A system that generates 30-day trials to QuaverMusic and QuaverSEL - integrated with third party email system, allowing marketing to control email contents. 
-  url: "https://www.quavered.com/preview"
+  url: "https://www.quavered.com/preview/"
   image: "quavered.png"
 - name: "'Vessel Insurance' Theme"
   date: "2018"
