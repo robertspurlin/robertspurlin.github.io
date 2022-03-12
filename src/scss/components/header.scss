@@ -1,0 +1,23 @@
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    background: #fff;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+    text-decoration: none;
+	font-weight: 700;
+	color: rgb(46, 46, 46);
+
+	.navbar-brand {
+        font-size: 16px;
+        padding: 16px;
+        letter-spacing: 3.2px;
+        line-height: 18px;
+        height: 52px;
+	}
+
+	.nav-link {
+		font-size: 12px;
+		letter-spacing: 2.4px;
+		padding: 1rem !important;
+	}
+}
