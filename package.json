@@ -1,12 +1,11 @@
 {
   "name": "robert-spurlin-portfolio",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://robertspurlin.github.io",
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000"
