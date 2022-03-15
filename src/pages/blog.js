@@ -3,9 +3,7 @@ import { useRouteData } from 'react-static';
 import PageHeader from '../components/PageHeader';
 import {
   Container,
-  Row,
-  Col,
-  Image
+  Col
 } from 'react-bootstrap';
 import Post from '../components/Post';
 

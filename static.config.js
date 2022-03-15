@@ -5,7 +5,7 @@ import matter from 'gray-matter';
 export default {
   getRoutes: async () => {
     let posts = [];
-    const postPath = 'src/content';
+    const postPath = 'src/content/posts';
     const paths = fs.readdirSync(postPath);
 
     posts = paths.map(file => {
@@ -15,7 +15,9 @@ export default {
         slug: slug,
         ...fileData
       };
-    })
+    });
+
+    const projects = matter.read('src/content/projects/projects.yml');
 
     return [
       {
@@ -31,6 +33,12 @@ export default {
           }),
         })),
       },
+      {
+        path: '/projects',
+        getData: () => ({
+          projects
+        }),
+      }
     ]
   },
   plugins: [

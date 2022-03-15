@@ -7,7 +7,7 @@ import {
 import { Link } from '@reach/router';
 
 const truncateString = (str) => {
-  return str.length > 200 ? str.substring(0, 200) + "..." : str;
+  return str.length > 175 ? str.substring(0, 175) + "..." : str;
 }
 
 const getDate = (title) => {
