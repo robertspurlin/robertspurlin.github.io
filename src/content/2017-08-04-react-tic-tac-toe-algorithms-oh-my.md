@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "React, Tic-Tac-Toe, and Algorithms, oh my!"
-thumbnail_path: blog/algorithm.jpg
+thumbnail_path: /images/blog/algorithm.jpeg
 ---
 
 I was in a developer's meeting at my internship (Titan Web Marketing Solutions) about a week or so ago. We were talking about interactive dashboards 

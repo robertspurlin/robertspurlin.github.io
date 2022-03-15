@@ -10,7 +10,7 @@ export default {
 
     posts = paths.map(file => {
       const fileData = matter.read(postPath + '/' + file);
-      const slug =  "/" + file.replace(/\.md?$/, '');
+      const slug = "/" + file.replace(/\.md?$/, '');
       return {
         slug: slug,
         ...fileData

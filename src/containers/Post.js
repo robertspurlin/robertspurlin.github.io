@@ -7,6 +7,7 @@ import {
   Col 
 } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
+import { Link } from '@reach/router';
 
 const Post = () => {
   const { post } = useRouteData();
@@ -19,7 +20,10 @@ const Post = () => {
       </PageHeader>
       <Container className='small-container'>
         <Row>
-          <Col xs='12' className='my-5'>
+          <Col xs='12' className='my-3'>
+          <Link to='/blog'>&lt; Back to Blog</Link>
+          </Col>
+          <Col xs='12' className='mb-3'>
             <ReactMarkdown children={ post.content } />
           </Col>
         </Row>

@@ -1,12 +1,13 @@
 import React from 'react';
 import { useRouteData } from 'react-static';
 import PageHeader from '../components/PageHeader';
-import { 
-  Container, 
-  Row, 
-  Col 
+import {
+  Container,
+  Row,
+  Col,
+  Image
 } from 'react-bootstrap';
-import { Link } from '@reach/router';
+import Post from '../components/Post';
 
 const Blog = () => {
   const { posts } = useRouteData();
@@ -18,16 +19,12 @@ const Blog = () => {
           <p className='mt-3'>My thoughts, now on the internet.</p>
         </Col>
       </PageHeader>
-      <Container>
-        <Row>
-          {
-            posts.map(post => (
-              <Col key={post.slug} xs='12'>
-                <Link to={`/blog/post${post.slug}/`}>{post.data.title}</Link>
-              </Col>
-            ))
-          }
-        </Row>
+      <Container className='small-container'>
+        {
+          posts.map(post => (
+            <Post key={post.slug} post={post} />
+          ))
+        }
       </Container>
     </div>
   )

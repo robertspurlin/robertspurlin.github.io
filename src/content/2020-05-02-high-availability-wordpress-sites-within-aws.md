@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "High Availability WordPress Websites Within AWS"
-thumbnail_path: blog/wordpress.png
+thumbnail_path: /images/blog/wordpress.png
 ---
 
 The best way to learn something deeply is to try to teach it. So, here is my attempt to provide a crude guideline on how to set up a high-availibility WordPress site. This post assumes -
