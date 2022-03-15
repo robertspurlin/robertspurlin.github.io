@@ -1,7 +1,6 @@
 {
   "name": "robert-spurlin-portfolio",
   "private": true,
-  "basePath": "robertspurlin/robertspurlin.github.io",
   "homepage": "https://robertspurlin.github.io",
   "scripts": {
     "start": "react-static start",
