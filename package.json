@@ -1,7 +1,7 @@
 {
   "name": "robert-spurlin-portfolio",
   "private": true,
-  "homepage": "https://robertspurlin.github.io/",
+  "homepage": "https://robertspurlin.github.io",
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
