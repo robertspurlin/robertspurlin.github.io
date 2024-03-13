@@ -11,11 +11,13 @@ export default {
     posts = paths.map(file => {
       const fileData = matter.read(postPath + '/' + file);
       const slug = "/" + file.replace(/\.md?$/, '');
+      const date = new Date(slug.substring(1, 11));
       return {
         slug: slug,
+        date: date,
         ...fileData
       };
-    });
+    }).sort((a, b) => b.date - a.date);
 
     const projects = matter.read('src/content/projects/projects.yml');
 

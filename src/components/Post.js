@@ -10,10 +10,8 @@ const truncateString = (str) => {
   return str.length > 175 ? str.substring(0, 175) + "..." : str;
 }
 
-const getDate = (title) => {
-  const dateStr = title.substring(1, 11);
-  const date = new Date(dateStr);
-  return date.toLocaleDateString('en-US', {
+const getDate = (date) => {
+  return new Date(date).toLocaleDateString('en-US', {
     month: 'long',
     day: 'numeric',
     year: 'numeric',
@@ -34,7 +32,7 @@ const Post = ({ post }) => {
           <Link to={`/blog/post${post.slug}/`}>
             <h2>{ post.data.title }</h2>
           </Link>
-          <p>{ getDate(post.slug) }</p>
+          <p>{ getDate(post.date) }</p>
           <p>{ truncateString(post.content) }</p>
           <Link to={`/blog/post${post.slug}/`}>Continue Reading &gt;</Link>
         </Col>
