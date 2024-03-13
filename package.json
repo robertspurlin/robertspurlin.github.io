@@ -6,7 +6,7 @@
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
-    "deploy": "gh-pages -b master -d dist",
+    "deploy": "gh-pages -d dist -t true",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000"
   },

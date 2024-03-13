@@ -63,7 +63,7 @@ ingress:
     alb.ingress.kubernetes.io/success-codes: '200'
 ```
 
-The final modification to the Ingress is to add the hosts and paths as appropriate (confirm that the templates will read the values appropriately). Note that only one path - `/app/app-key` - is defined. The Soketi server will upgrade the connection on successful authenication. 
+Another modification to the Ingress is to add the hosts and paths as appropriate (confirm that the templates will read the values appropriately). Note that only one path - `/app/app-key` - is defined. The Soketi server will upgrade the connection on successful authenication. 
 
 ```
   hosts:
