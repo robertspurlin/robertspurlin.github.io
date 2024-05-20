@@ -20,6 +20,8 @@ const getDate = (date) => {
 }
 
 const Post = ({ post }) => {
+  const preview = post.data.hasOwnProperty("preview") ? post.data.preview : truncateString(post.content);
+
   return (
     <article className='my-5'>
       <Row>
@@ -33,7 +35,7 @@ const Post = ({ post }) => {
             <h2>{ post.data.title }</h2>
           </Link>
           <p>{ getDate(post.date) }</p>
-          <p>{ truncateString(post.content) }</p>
+          <p>{ preview }</p>
           <Link to={`/blog/post${post.slug}/`}>Continue Reading &gt;</Link>
         </Col>
         <Col xs='12' className='mt-5 mb-3'>

@@ -69,7 +69,7 @@ Another modification to the Ingress is to add the hosts and paths as appropriate
   hosts:
   - host: # your host name here
     paths:
-      - /app/app-key
+      - /app/app-key # replace "app-key" with your app-key
 ```
 
 One final modification that we made to the Helm chart is the addition of an ExternalSecret to pass the `SOKETI_DEFAULT_APP_ID`, `SOKETI_DEFAULT_APP_KEY`, and `SOKETI_DEFAULT_APP_SECRET` to the pod - the Soketi server already listens for said env variables to configure on run. 
